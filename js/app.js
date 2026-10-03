@@ -1,0 +1,22 @@
+import { initEnv } from "./env.js";
+import { initDesk } from "./desk.js";
+import { initClock, initNav, initProgress } from "./spine.js";
+import { initCursor, initMagnetic } from "./pointer.js";
+import { initMovements } from "./movements.js";
+import { initScore } from "./score.js";
+import { initConstellation } from "./constellation.js";
+import { initCompose } from "./compose.js";
+import { initReveal } from "./reveal.js";
+
+initEnv();
+initDesk();
+initClock();
+initProgress();
+initNav();
+initCursor();
+initMagnetic();
+initMovements();
+initScore();
+initConstellation();
+initCompose();
+initReveal();

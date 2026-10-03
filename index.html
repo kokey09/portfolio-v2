@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Khim S. Rata — Production, held in tune</title>
+    <meta
+      name="description"
+      content="Khim S. Rata is a full-stack developer in Quezon City. At Zkript he maintains production TypeScript systems for Cavalry and Hello Again — React Native, Next.js, NestJS, and Express."
+    />
+    <meta name="theme-color" content="#efe6d0" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;0,9..144,700;1,9..144,400;1,9..144,560&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#stage">Skip to content</a>
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor" hidden aria-hidden="true">
+      <span class="cursor__ring"></span>
+      <span class="cursor__dot"></span>
+    </div>
+
+    <aside class="spine" aria-label="Studio index">
+      <a class="spine__mark" href="#prelude">
+        <span>Khim</span>
+        <span>Rata</span>
+      </a>
+
+      <nav class="spine__nav">
+        <a href="#prelude" data-nav="prelude"><i>00</i><span>Prelude</span></a>
+        <a href="#movements" data-nav="movements"><i>01</i><span>Work</span></a>
+        <a href="#voices" data-nav="voices"><i>02</i><span>Voices</span></a>
+        <a href="#chronology" data-nav="chronology"><i>03</i><span>Log</span></a>
+        <a href="#coda" data-nav="coda"><i>04</i><span>Coda</span></a>
+      </nav>
+
+      <div class="spine__foot">
+        <p class="spine__clock">
+          <span data-clock>PHT —</span>
+          <span data-clock-date></span>
+        </p>
+        <button class="desk-toggle" type="button" aria-pressed="false" title="Toggle day / night desk (D)">
+          <span data-desk-label>Night desk</span>
+        </button>
+      </div>
+
+      <div class="spine__progress" aria-hidden="true"><b></b></div>
+    </aside>
+
+    <div class="marks" aria-hidden="true">
+      <i class="mark mark--tl"></i>
+      <i class="mark mark--tr"></i>
+      <i class="mark mark--bl"></i>
+      <i class="mark mark--br"></i>
+    </div>
+
+    <main id="stage" class="stage">
+      <header class="masthead">
+        <p class="masthead__issue">Studio notes · Vol. 02 · MMXXVI</p>
+        <p class="masthead__where">Quezon City · Full-stack at Zkript</p>
+        <p class="masthead__status">
+          <span class="live" aria-hidden="true"></span>
+          In production · Cavalry, EVX, Koobo
+        </p>
+      </header>
+
+      <section id="prelude" class="prelude" data-section="prelude">
+        <div class="prelude__hero">
+          <div>
+            <p class="kicker">Production is many independent lines, held in tune.</p>
+            <h1 class="display">
+              Software that
+              <em>keeps its word</em>
+              after the demo ends.
+            </h1>
+          </div>
+          <dl class="facts">
+            <div>
+              <dt>Practice</dt>
+              <dd>Full-stack, production first</dd>
+            </div>
+            <div>
+              <dt>Desk</dt>
+              <dd>TypeScript, React, NestJS</dd>
+            </div>
+            <div>
+              <dt>Bias</dt>
+              <dd>Defects, realtime, release</dd>
+            </div>
+          </dl>
+        </div>
+        <p class="lede">
+          Khim S. Rata writes TypeScript across React Native, Next.js, NestJS,
+          and Express — then stays with it when a defect shows up in a live
+          environment. At Zkript the desk is Cavalry and Hello Again: real-time
+          systems, schema migrations, and releases that have to land.
+        </p>
+
+        <figure class="score">
+          <figcaption>
+            <span>Live score</span>
+            <span>Four voices · move the pointer to conduct</span>
+          </figcaption>
+          <canvas id="score" width="1200" height="280" aria-hidden="true"></canvas>
+          <ul class="score__legend">
+            <li><i class="v v--i"></i> Interface</li>
+            <li><i class="v v--ii"></i> Systems</li>
+            <li><i class="v v--iii"></i> Persistence</li>
+            <li><i class="v v--iv"></i> Delivery</li>
+          </ul>
+        </figure>
+      </section>
+
+      <section id="movements" class="section movements" data-section="movements">
+        <header class="section__head">
+          <p class="folio">01</p>
+          <div>
+            <h2>Selected movements</h2>
+            <p>
+              Three production pieces from the Zkript desk. Energy-company
+              web apps, an EV charging client, and a travel marketplace that
+              had to stop racing itself.
+            </p>
+          </div>
+        </header>
+
+        <div class="index-rule" aria-hidden="true">
+          <span>No.</span>
+          <span>Title</span>
+          <span>Role of the piece</span>
+          <span>Year</span>
+        </div>
+
+        <article class="movement" id="cavalry">
+          <button class="movement__head" type="button" aria-expanded="false" aria-controls="cavalry-body">
+            <span class="movement__no">01</span>
+            <span class="movement__title">Cavalry</span>
+            <span class="movement__role">Engineering services, in production</span>
+            <span class="movement__year">Zkript</span>
+            <span class="movement__cue" aria-hidden="true"></span>
+          </button>
+          <div class="movement__body" id="cavalry-body" hidden>
+            <div class="movement__spread">
+              <div class="poster poster--cavalry" aria-hidden="true">
+                <img class="poster__watermark" src="assets/projects/cavalry-c.svg" alt="" />
+                <span class="poster__stamp">OIDC · SSO</span>
+                <div class="poster__tiles">
+                  <img src="assets/projects/cavalry-anya.png" alt="" />
+                  <img src="assets/projects/cavalry-mto.png" alt="" />
+                  <img src="assets/projects/cavalry-tags.png" alt="" />
+                  <img src="assets/projects/cavalry-schematics.png" alt="" />
+                  <img src="assets/projects/cavalry-electrical.png" alt="" />
+                  <img src="assets/projects/cavalry-timesheet.png" alt="" />
+                </div>
+              </div>
+              <div class="movement__copy">
+                <p class="movement__lead">
+                  An Australian engineering firm. The apps have to authenticate
+                  the same person across more than one company hall.
+                </p>
+                <p>
+                  Maintain and enhance production web applications for Cavalry,
+                  including deployments that serve end clients Santos and Arrow
+                  Energy. Configure those environments with Docker, and keep
+                  the OpenID Connect single sign-on that ties the suite together.
+                </p>
+                <ul class="chips">
+                  <li>Next.js</li>
+                  <li>NestJS</li>
+                  <li>Express.js</li>
+                  <li>Docker</li>
+                  <li>OpenID Connect</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="movement" id="evx">
+          <button class="movement__head" type="button" aria-expanded="false" aria-controls="evx-body">
+            <span class="movement__no">02</span>
+            <span class="movement__title">EVX</span>
+            <span class="movement__role">Electric vehicle charging</span>
+            <span class="movement__year">Hello Again</span>
+            <span class="movement__cue" aria-hidden="true"></span>
+          </button>
+          <div class="movement__body" id="evx-body" hidden>
+            <div class="movement__spread">
+              <div class="poster poster--evx" aria-hidden="true">
+                <img class="poster__mark poster__mark--icon" src="assets/projects/evx-mark.svg" alt="" />
+                <img class="poster__wordmark" src="assets/projects/evx-logo.png" alt="" />
+                <span class="poster__stamp">PLATE → SESSION</span>
+              </div>
+              <div class="movement__copy">
+                <p class="movement__lead">
+                  A driver should add a car from a plate, pay for a session,
+                  and be the person the app thinks they are.
+                </p>
+                <p>
+                  On the Hello Again EVX Expo app: driver authentication,
+                  the Stripe payment path for charging sessions, and licence-plate
+                  lookup so a vehicle can be added from plate details. TypeScript
+                  through React Native, NestJS, Prisma, and TanStack Query.
+                </p>
+                <ul class="chips">
+                  <li>TypeScript</li>
+                  <li>React Native</li>
+                  <li>Expo</li>
+                  <li>NestJS</li>
+                  <li>Prisma</li>
+                  <li>TanStack Query</li>
+                  <li>Stripe</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="movement" id="koobo">
+          <button class="movement__head" type="button" aria-expanded="false" aria-controls="koobo-body">
+            <span class="movement__no">03</span>
+            <span class="movement__title">Koobo</span>
+            <span class="movement__role">Travel booking marketplace</span>
+            <span class="movement__year">Zkript</span>
+            <span class="movement__cue" aria-hidden="true"></span>
+          </button>
+          <div class="movement__body" id="koobo-body" hidden>
+            <div class="movement__spread">
+              <div class="poster poster--koobo" aria-hidden="true">
+                <img class="poster__fill" src="assets/projects/koobo-mark.png" alt="" />
+                <span class="poster__stamp">koobo.ph</span>
+              </div>
+              <div class="movement__copy">
+                <p class="movement__lead">
+                  Two requests at the same second should not invent two
+                  different bookings.
+                </p>
+                <p>
+                  Diagnosed a race in the payment and reservation flow that left
+                  booking state inconsistent under concurrent requests. Then
+                  re-architected Socket.IO notifications: messages used to fire
+                  only inside a chat room, so per-user rooms now reach a
+                  recipient anywhere in the app. Defects across a Next.js and
+                  NestJS Turborepo on MongoDB.
+                </p>
+                <ul class="chips">
+                  <li>Next.js</li>
+                  <li>NestJS</li>
+                  <li>MongoDB</li>
+                  <li>Socket.IO</li>
+                  <li>Docker</li>
+                  <li>Turborepo</li>
+                </ul>
+                <p class="movement__links">
+                  <a href="https://www.koobo.ph" rel="noopener noreferrer" target="_blank">koobo.ph</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="voices" class="section voices" data-section="voices">
+        <header class="section__head">
+          <p class="folio">02</p>
+          <div>
+            <h2>The four voices</h2>
+            <p>
+              The registers from the desk. Hover a node to see where it sits
+              — interface, systems, persistence, or the last mile.
+            </p>
+          </div>
+        </header>
+
+        <div class="voices__layout">
+          <aside class="voice-list" aria-label="Registers">
+            <button type="button" class="voice-list__item is-active" data-voice="all">
+              <i>00</i>
+              <span>Tutti — full ensemble</span>
+            </button>
+            <button type="button" class="voice-list__item" data-voice="interface">
+              <i>I</i>
+              <span>Interface</span>
+            </button>
+            <button type="button" class="voice-list__item" data-voice="systems">
+              <i>II</i>
+              <span>Systems</span>
+            </button>
+            <button type="button" class="voice-list__item" data-voice="persistence">
+              <i>III</i>
+              <span>Persistence</span>
+            </button>
+            <button type="button" class="voice-list__item" data-voice="delivery">
+              <i>IV</i>
+              <span>Delivery</span>
+            </button>
+          </aside>
+
+          <div class="constellation" id="constellation">
+            <svg class="constellation__wires" aria-hidden="true"></svg>
+            <div class="constellation__nodes"></div>
+            <p class="constellation__note" data-note>
+              Select a register, or rest on a node.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="chronology" class="section chronology" data-section="chronology">
+        <header class="section__head">
+          <p class="folio">03</p>
+          <div>
+            <h2>Chronology</h2>
+            <p>
+              A short log. The degree closes in Fairview. The desk at Zkript
+              opens the next month, on systems that are already live.
+            </p>
+          </div>
+        </header>
+
+        <ol class="log">
+          <li>
+            <time datetime="2025-10">2025</time>
+            <div>
+              <h3>The degree</h3>
+              <p>
+                Bachelor of Science in Computer Science, AMA Computer College
+                — Fairview, Quezon City. Graduated October 2025.
+              </p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2025-11">Nov</time>
+            <div>
+              <h3>Zkript</h3>
+              <p>
+                Full-stack developer. Maintain and enhance production
+                applications for Cavalry and Hello Again (EVX). TypeScript
+                across React Native (Expo), Next.js, NestJS, and Express.
+              </p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026">Now</time>
+            <div>
+              <h3>Still in the live path</h3>
+              <p>
+                Production defects, versioned schema migrations on PostgreSQL,
+                MySQL, and MongoDB, and releases onto Microsoft Azure and
+                Docker. The work is the suite after launch, not the slide
+                before it.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="coda" class="section coda" data-section="coda">
+        <header class="section__head">
+          <p class="folio">04</p>
+          <div>
+            <h2>Write the next line</h2>
+            <p>
+              If the problem is already in production — a race, a login, a
+              payment that must not double-book — send a short brief.
+            </p>
+          </div>
+        </header>
+
+        <div class="coda__grid">
+          <div class="coda__address">
+            <p class="coda__email">
+              <a href="mailto:khimrata11@gmail.com">khimrata11@gmail.com</a>
+            </p>
+            <ul class="coda__channels">
+              <li><a href="https://github.com/kokey09" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+              <li><a href="tel:+639129858857">+63 912 985 8857</a></li>
+              <li>Quezon City, PH</li>
+            </ul>
+            <blockquote>
+              “Diagnose the defect. Keep the realtime honest. Land the release.”
+            </blockquote>
+          </div>
+
+          <form class="compose" id="compose" novalidate>
+            <div class="hp" aria-hidden="true">
+              <label for="company">Company</label>
+              <input id="company" name="_honey" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label for="from">From</label>
+              <input id="from" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="reply">Reply to</label>
+              <input id="reply" name="email" type="email" autocomplete="email" required placeholder="you@studio.com" />
+            </div>
+            <div class="field">
+              <label for="intent">Intent</label>
+              <select id="intent" name="intent" required>
+                <option value="" selected disabled>Choose the register</option>
+                <option>A product that needs all four voices</option>
+                <option>A rescue of something already in production</option>
+                <option>A focused frontend, mobile, or API movement</option>
+                <option>Something quieter — say it below</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="note">Brief</label>
+              <textarea id="note" name="message" rows="5" required placeholder="What has to keep working after launch?"></textarea>
+            </div>
+            <div class="compose__bar">
+              <button class="btn" type="submit" data-magnetic>Send the letter</button>
+              <p class="compose__hint" data-compose-hint>Lands in the inbox via FormSubmit. No account required.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="colophon">
+        <p>© <span data-year>2026</span> Khim S. Rata</p>
+      </footer>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
