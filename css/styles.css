@@ -20,6 +20,7 @@
   --mono: "IBM Plex Mono", "ui-monospace", monospace;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   --theme: #efe6d0;
+  color-scheme: light;
 }
 
 [data-desk="night"] {
@@ -37,6 +38,7 @@
   --voice-iii: #8fa36c;
   --voice-iv: #7eb0c6;
   --theme: #12110e;
+  color-scheme: dark;
 }
 
 *,
@@ -1008,12 +1010,18 @@ textarea {
     border-bottom: 1px solid var(--rule-strong);
     border-radius: 0;
     background: transparent;
+    color: var(--ink);
     padding: 0.45rem 0;
     outline: none;
 
     &:focus {
       border-bottom-color: var(--vermillion);
     }
+  }
+
+  option {
+    background-color: var(--paper);
+    color: var(--ink);
   }
 
   textarea {
